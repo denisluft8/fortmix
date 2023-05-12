@@ -17,6 +17,7 @@ position: absolute;
 
   & > ul {
     list-style: none;
+    margin-right: 40px;
 
     & > li {
       float: left;

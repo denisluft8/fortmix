@@ -1,3 +1,5 @@
+import { About } from "./About/About";
 import { Home } from "./Home/Home";
+import { Values } from "./Values/Values";
 
-export { Home };
+export { About, Home, Values };

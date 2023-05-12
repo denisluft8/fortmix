@@ -1,4 +1,5 @@
 import { background } from "../../assets";
+import { Button } from "../../components";
 import {
   BackgroundImg,
   ContentContainer,
@@ -24,6 +25,7 @@ export const Home = () => {
             justo ut ante egestas, sed volutpat nisl laoreet. Phasellus a lectus
             non turpis interdum molestie at at ex.
           </p>
+          <Button text="Saiba Mais" />
         </ContentContainer>
         <ContentContainer>
           <h1>FORTMIX</h1>

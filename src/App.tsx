@@ -1,11 +1,13 @@
 import { Layout } from "./layout";
-import { Home } from "./pages";
+import { About, Home, Values } from "./pages";
 
 function App() {
   return (
     <>
       <Layout>
         <Home />
+        <About />
+        <Values />
       </Layout>
     </>
   );
