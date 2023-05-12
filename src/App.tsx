@@ -1,10 +1,12 @@
 import { Layout } from "./layout";
+import { Home } from "./pages";
 
 function App() {
   return (
     <>
-      <Layout />
-      <h1>FortMix</h1>
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 }

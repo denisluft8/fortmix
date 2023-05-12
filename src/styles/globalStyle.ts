@@ -1,12 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    background: #002240;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
-  }
+#root{
+    height: 100vh;
+  font-family: Open-Sans, Helvetica, Sans-Serif;
+    
+}
+html{
+  height: 100%;
+}
+
+body {
+  background-color: #002240;
+  /* line-height: 28px; */
+  min-height: 100%;}
+  font-family: Open-Sans, Helvetica, Sans-Serif;
+
 `;
 
 export default GlobalStyle;

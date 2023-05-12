@@ -1,12 +1,14 @@
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.div`
+position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 84px;
   top: 0;
   width: 100%;
+  z-index: 999;
 
   & > img {
     height: 80px;
