@@ -1,5 +1,5 @@
 import { Layout } from "./layout";
-import { About, Home, Values } from "./pages";
+import { About, Home, Services, Values } from "./pages";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <Home />
         <About />
         <Values />
+        <Services />
       </Layout>
     </>
   );

@@ -22,4 +22,6 @@ export const MissionCardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1500px;
+
 `;
