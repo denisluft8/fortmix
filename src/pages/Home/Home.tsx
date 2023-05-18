@@ -9,7 +9,7 @@ import {
 
 export const Home = () => {
   return (
-    <HomeSection>
+    <HomeSection id="home">
       <BackgroundImg src={background} />
       <HomeContainer>
         <ContentContainer>

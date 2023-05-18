@@ -4,22 +4,24 @@ import { HeaderContainer } from "./Header.styles";
 export const Header = () => {
   return (
     <HeaderContainer>
-      <img src={logo} />
+      <a href="#home">
+        <img src={logo} />
+      </a>
       <ul>
         <li>
-          <a>Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a>Sobre</a>
+          <a href="#about">Sobre</a>
         </li>
         <li>
-          <a>Projetos</a>
+          <a href="#work">O que fazemos</a>
         </li>
         <li>
-          <a>Blog</a>
+          <a href="#services">Serviços</a>
         </li>
         <li>
-          <a>Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </HeaderContainer>

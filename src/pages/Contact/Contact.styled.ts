@@ -6,19 +6,22 @@ interface ContactContainerProps {
 
 export const ContactSection = styled.section`
   height: 100%;
+  color: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ddd;
 `;
+
 
 export const ContactContainer = styled.div<ContactContainerProps>`
   background: ${(props) => props.bgColor};
-  height: 80%;
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: center;
   width: 38%;
-  padding: 12px;
-  & > h2 {
-  }
+  padding: 20px;
+
   & > iframe {
     border: none;
     height: 480px;
@@ -28,7 +31,8 @@ export const ContactContainer = styled.div<ContactContainerProps>`
 
 export const IconContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 40px;
 
   & > a {
     cursor: pointer;
@@ -47,6 +51,7 @@ export const ContactForm = styled.form`
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  margin-bottom: 32px;
 
   & > label {
     border-width: 0 !important;

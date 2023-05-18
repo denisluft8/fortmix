@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.div`
-position: absolute;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@ position: absolute;
   width: 100%;
   z-index: 999;
 
-  & > img {
+  & > a > img {
     height: 80px;
     margin-left: 20px;
   }

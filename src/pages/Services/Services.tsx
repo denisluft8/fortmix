@@ -4,9 +4,9 @@ import { CardContainer, ServicesSection } from "./Services.styles";
 
 export const Services = () => {
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <SectionName top text={"Nossos Serviços"} textColor={"#000"} />
-      <h2>Veja alguns de nossos serviços</h2>
+      <h2>Conheça alguns de nossos serviços</h2>
       <CardContainer>
         <ServicesCard
           image={icon5}

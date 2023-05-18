@@ -1,5 +1,4 @@
-import { ChangeEvent, useState } from "react";
-import { constructionSilhouette2, insta, whats } from "../../assets";
+import { insta, whats } from "../../assets";
 import { SectionName } from "../../components";
 import {
   ContactContainer,
@@ -10,27 +9,15 @@ import {
 
 export const Contact = () => {
   return (
-    <ContactSection>
-      <ContactContainer bgColor="#022a4d">
+    <ContactSection id="contact">
+      <ContactContainer style={{ textAlign: "center" }} bgColor="#022a4d">
         <h2>Veja algumas de nossas obras:</h2>
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1wALpnsg7zPP2KYq7dKLaL6AN6PknouY&ehbc=2E312F"
-          
-        ></iframe>
-        <h2>Fale conosco pelas nossas redes:</h2>
-        <IconContainer>
-          <a>
-            <img src={insta} />
-          </a>
-          <a>
-            <img src={whats} />
-          </a>
-        </IconContainer>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1wALpnsg7zPP2KYq7dKLaL6AN6PknouY&ehbc=2E312F"></iframe>
       </ContactContainer>
       <ContactContainer bgColor="#022a4d">
         <SectionName text={"Entre em Contato"} textColor={"#fff"} />
-        <h3>
-          Ou preencha o formulário abaixo e assim que possível entraremos em
+        <h3 style={{ textAlign: "center" }}>
+          Preencha o formulário abaixo e assim que possível entraremos em
           contato:
         </h3>
         <ContactForm>
@@ -45,6 +32,17 @@ export const Contact = () => {
             placeholder="Mensagem"
           ></textarea>
         </ContactForm>
+        <h2 style={{ textAlign: "center" }}>
+          Ou fale conosco pelas nossas redes:
+        </h2>
+        <IconContainer>
+          <a target="_blank" href="https://www.instagram.com/fortmixcn/">
+            <img src={insta} />
+          </a>
+          <a target="_blank" href="https://wa.me/5549999301607">
+            <img src={whats} />
+          </a>
+        </IconContainer>
       </ContactContainer>
     </ContactSection>
   );

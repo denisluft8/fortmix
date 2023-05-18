@@ -4,7 +4,7 @@ import { MissionCardContainer, ValuesSection } from "./Values.styles";
 
 export const Values = () => {
   return (
-    <ValuesSection>
+    <ValuesSection id="work">
       <SectionName textColor="#ff8922" top text="O que fazemos" />
       <h2>Melhore sua experiência conosco</h2>
       <MissionCardContainer>

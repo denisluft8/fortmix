@@ -10,7 +10,7 @@ import {
 
 export const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <AboutContainer>
         <ImgContainer>
           <ImgAbout1 src={construction3} alt="" />
