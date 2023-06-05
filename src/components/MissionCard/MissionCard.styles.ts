@@ -10,6 +10,16 @@ export const MCardContainer = styled.div`
   width: 450px;
   background-color: #022a4d;
   padding: 0 20px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 320px;
+    height: auto;
+    padding: 20px;
+  }
+  @media (max-width: 424px) {
+    width: 280px;
+  }
 `;
 
 export const MCardTextContainer = styled.div`
@@ -28,6 +38,13 @@ export const MCardTextContainer = styled.div`
     font-size: 14px;
     line-height: 16px;
   }
+
+  @media (max-width: 500px) {
+    align-items: center;
+  }
+  & > p {
+    /* text-align: center; */
+  }
 `;
 
 export const MCardImgContainer = styled.div`
@@ -37,5 +54,11 @@ export const MCardImgContainer = styled.div`
 
   & > img {
     height: 110px;
+  }
+
+  @media (max-width: 500px) {
+    & > img {
+      height: 80px;
+    }
   }
 `;

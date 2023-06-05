@@ -10,6 +10,11 @@ export const ButtonStyled = styled.button`
   font-size: 15px;
   cursor: pointer;
 
+  & > a {
+    text-decoration: none;
+    color: #000;
+  }
+
   &:hover {
     background: #ff983d;
     transition: 0.3s;

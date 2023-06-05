@@ -5,18 +5,26 @@ interface ContactContainerProps {
 }
 
 export const ContactSection = styled.section`
+  min-height: 100%;
   height: 100%;
   color: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
 
+  @media (max-width: 500px) {
+    height: auto;
+    flex-direction: column;
+  }
+  @media (max-width: 420px) {
+    width: 110%;
+  }
+`;
 
 export const ContactContainer = styled.div<ContactContainerProps>`
   background: ${(props) => props.bgColor};
+  height: 70%;
   display: flex;
-  height: 60%;
   flex-direction: column;
   justify-content: center;
   width: 38%;
@@ -25,6 +33,14 @@ export const ContactContainer = styled.div<ContactContainerProps>`
   & > iframe {
     border: none;
     height: 480px;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 20px;
+    width: auto;
+  }
+  @media (max-width: 420px) {
     width: 100%;
   }
 `;
@@ -128,6 +144,20 @@ export const ContactForm = styled.form`
     &:focus {
       height: 140px;
       width: 380px;
+    }
+  }
+  @media (max-width: 420px) {
+    & > input {
+      width: 250px;
+      &:focus {
+        width: 300px;
+      }
+    }
+    & > textarea {
+      width: 250px;
+      &:focus {
+        width: 300px;
+      }
     }
   }
 `;

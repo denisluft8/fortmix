@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const ServicesSection = styled.section`
-  
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -14,6 +13,17 @@ export const ServicesSection = styled.section`
     font-weight: 900;
     margin-bottom: 80px;
   }
+
+  @media (max-width: 500px) {
+    & > h2 {
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 424px) {
+    min-width: 100%;
+    width: 112%;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -21,4 +31,9 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;

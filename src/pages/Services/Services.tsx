@@ -10,21 +10,21 @@ export const Services = () => {
       <CardContainer>
         <ServicesCard
           image={icon5}
-          title={"Lorem Ipsum"}
+          title={"Reformas"}
           text={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper mattis dolor a hendrerit. Phasellus at dolor ut dui porta rhoncus. Pellentesque quis scelerisque metus, vel facilisis nulla. "
           }
         />
         <ServicesCard
           image={icon6}
-          title={"Lorem Ipsum"}
+          title={"Construção de Instalações Agrícolas"}
           text={
             "Nulla et ante eu sapien venenatis faucibus ut sed lectus. Vivamus sagittis auctor pulvinar. Sed semper erat sed lorem mollis, at efficitur tortor dapibus. Integer et urna tortor. "
           }
         />
         <ServicesCard
           image={icon7}
-          title={"Lorem Ipsum"}
+          title={"Construção Civil"}
           text={
             "Morbi a tortor sed dui congue facilisis nec vitae velit. Duis et venenatis eros, non porttitor neque. Praesent at eleifend magna, ut condimentum nisi. Nam a eleifend felis. Aliquam sit amet risus commodo lorem dictum mollis. Cras at felis vitae est cursus posuere. "
           }

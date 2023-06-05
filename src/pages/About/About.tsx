@@ -1,4 +1,4 @@
-import { construction3, workerBack } from "../../assets";
+import { construction3, equipe } from "../../assets";
 import { Button, SectionName } from "../../components";
 import {
   AboutContainer,
@@ -15,11 +15,11 @@ export const About = () => {
         <ImgContainer>
           <ImgAbout1 src={construction3} alt="" />
         </ImgContainer>
-        <ImgAbout2 src={workerBack} alt="" />
+        <ImgAbout2 src={equipe} alt="" />
       </AboutContainer>
       <AboutContainer display="flex">
         <SectionName textColor="#000" text="Sobre Nós" />
-        <h2>Somos Uma Construtora Lider</h2>
+        <h2>Somos uma Construtora que Sonha e Realiza Junto com Você</h2>
         <h4>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et
           varius velit. Phasellus hendrerit nulla sed leo pulvinar tincidunt.
@@ -35,7 +35,7 @@ export const About = () => {
           hendrerit sed leo non, venenatis condimentum magna. Phasellus
           venenatis ac nunc eu lobortis.
         </p>
-        <Button text="Saiba Mais" />
+        <Button link="#work" text="Saiba Mais" />
       </AboutContainer>
     </AboutSection>
   );
