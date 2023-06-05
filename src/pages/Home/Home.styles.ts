@@ -1,12 +1,13 @@
 import { styled } from "styled-components";
 
 export const HomeSection = styled.section`
-  min-height: 100%;
+  height: 100%;
   display: flex;
   top: 0;
 
   @media (max-width: 500px) {
     min-height: fit-content;
+    height: fit-content;
     flex-direction: column;
   }
 `;
@@ -19,7 +20,7 @@ export const BackgroundImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: 84px;
+  padding-bottom: 84px;
 
   @media (max-width: 424px) {
     height: 100%;
